@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hidechat - Secure Messaging</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div id="join-container" class="container">
+        <h2>🔒 Hidechat</h2>
+        <p>Enter a secure room code to start chatting</p>
+        <form id="join-form">
+            <input type="text" id="room-input" placeholder="Room Code (e.g. 1234)" required autocomplete="off">
+            <button type="submit">Join Room</button>
+        </form>
+    </div>
+
+    <div id="chat-container" class="container" style="display: none;">
+        <div class="chat-header">
+            <h2>🔒 Room: <span id="room-display"></span></h2>
+            <span class="status">Connected</span>
+        </div>
+        <ul id="messages"></ul>
+        <form id="chat-form">
+            <input id="message-input" autocomplete="off" placeholder="Type a message..." required />
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <!-- අලුත් ආදායම් මාර්ගය: Support Button -->
+    <!-- පසුව ඔයාගේ Buy Me a Coffee ලින්ක් එක "YOUR_LINK_HERE" වෙනුවට දාන්න -->
+    <a href="https://buymeacoffee.com/levigamage" target="_blank" id="donate-btn">
+        ☕ Support This Free App
+    </a>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
