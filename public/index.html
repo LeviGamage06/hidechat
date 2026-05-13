@@ -8,6 +8,7 @@
 </head>
 <body>
     
+    <!-- Join Screen -->
     <div id="join-container" class="container">
         <h2>🔒 Hidechat</h2>
         <p>Enter a secure room code to start chatting</p>
@@ -17,13 +18,13 @@
         </form>
     </div>
 
+    <!-- Chat Screen -->
     <div id="chat-container" class="container" style="display: none;">
         <div class="chat-header">
             <div>
                 <h2>🔒 Room: <span id="room-display"></span></h2>
                 <span class="status">Connected</span>
             </div>
-            
             <button id="copy-link-btn" title="Copy Invite Link">🔗 Copy Link</button>
         </div>
         <ul id="messages"></ul>
@@ -33,11 +34,16 @@
         </form>
     </div>
 
+    <!-- Monetization: Support Button -->
     <a href="YOUR_LINK_HERE" target="_blank" id="donate-btn">
         ☕ Support This Free App
     </a>
 
+    <!-- App Scripts -->
     <script src="/socket.io/socket.io.js"></script>
     <script src="script.js"></script>
+
+    <!-- Privacy-Friendly Analytics (GoatCounter) -->
+    <script data-goatcounter="https://hidechat-levi.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
 </body>
 </html>
