@@ -25,7 +25,7 @@ io.on('connection', (socket) => {
         socket.to(data.room).emit('chat message', data);
     });
 
-    // අලුත් කොටස: පරිශීලකයා චැට් එකෙන් යනකොට කාමරේ ඉන්න අනිත් අයට ඒක දැනුම් දෙනවා
+    
     socket.on('disconnecting', () => {
         socket.rooms.forEach(room => {
             if (room !== socket.id) {
