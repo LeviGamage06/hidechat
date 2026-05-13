@@ -121,9 +121,9 @@ socket.on('chat message', async (data) => {
     }
 });
 
-// අලුත් කොටස: අනිත් කෙනා චැට් එකෙන් ගියාම මතකය මකා දැමීම (Self-destruct)
+
 socket.on('user left', () => {
     alert("🔒 Privacy Alert: Your friend has left the chat. For your safety, this room will now self-destruct and all memory will be erased.");
-    // මේකෙන් මුළු පිටුවම අලුත් වෙලා, තියෙන දත්ත ඔක්කොම මැකිලා යනවා
+    
     window.location.reload(); 
 });
